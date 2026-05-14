@@ -1,8 +1,8 @@
 ## Equipo
 Karen Juliana Borja Jaramillo | 
 Juliana Hernandez | 
-Alvaro Diaz |
-Arnold Stiven |
+Alvaro Pulido |
+Arnold Fuentes |
 
 ## Curso
 Tecnologías Disruptivas - Universidad EAN
