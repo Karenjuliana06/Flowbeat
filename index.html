@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flowbeat — Descubre tu próxima obsesión musical</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+
+      <!-- HEADER -->
+      <header class="header">
+        <div class="logo">
+          <span class="logo-mark">◈</span>
+          <span class="logo-text">Flowbeat</span>
+        </div>
+        <button class="history-btn" id="historyToggle">
+          <span class="history-icon">◎</span>
+          Descubrimientos
+          <span class="history-count" id="historyCount">0</span>
+        </button>
+      </header>
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-bg">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+          <p class="hero-label">Rompe tu burbuja musical</p>
+          <h1 class="hero-title">¿Cómo te<br /><em>sientes</em> hoy?</h1>
+          <p class="hero-sub">Elige tu estado de ánimo y descubriremos música que nunca imaginaste que amarías.</p>
+        </div>
+      </section>
+
+      <!-- MOOD SELECTOR -->
+      <section class="mood-section">
+        <div class="mood-grid">
+          <button class="mood-card" data-mood="energetico" data-tag="dance">
+            <span class="mood-emoji">⚡</span>
+            <span class="mood-name">Energético</span>
+            <span class="mood-desc">A tope, sin parar</span>
+          </button>
+          <button class="mood-card" data-mood="melancolico" data-tag="sad">
+            <span class="mood-emoji">🌧</span>
+            <span class="mood-name">Melancólico</span>
+            <span class="mood-desc">Reflexivo y profundo</span>
+          </button>
+          <button class="mood-card" data-mood="relajado" data-tag="chill">
+            <span class="mood-emoji">🌿</span>
+            <span class="mood-name">Relajado</span>
+            <span class="mood-desc">Calma y flow</span>
+          </button>
+          <button class="mood-card" data-mood="euforico" data-tag="euphoria">
+            <span class="mood-emoji">🔥</span>
+            <span class="mood-name">Eufórico</span>
+            <span class="mood-desc">Intensidad máxima</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- LOADING -->
+      <div class="loader" id="loader">
+        <div class="loader-inner">
+          <div class="loader-ring"></div>
+          <p class="loader-text">Buscando tu próxima obsesión...</p>
+        </div>
+      </div>
+
+      <!-- RESULTS -->
+      <section class="results-section" id="resultsSection">
+        <div class="results-header">
+          <div>
+            <h2 class="results-title" id="resultsTitle">Tu sesión</h2>
+            <p class="results-subtitle">
+              <span class="tag familiar">● 70% familiar</span>
+              <span class="tag surprise">◆ 30% sorpresa</span>
+            </p>
+          </div>
+          <button class="refresh-btn" id="refreshBtn">↻ Refrescar</button>
+        </div>
+        <div class="tracks-grid" id="tracksGrid"></div>
+      </section>
+
+      <!-- HISTORY PANEL -->
+      <div class="history-panel" id="historyPanel">
+        <div class="history-header">
+          <h3>Tus descubrimientos</h3>
+          <button class="close-btn" id="closeHistory">✕</button>
+        </div>
+        <div class="history-list" id="historyList">
+          <p class="empty-history">Aún no has guardado nada.<br />Guarda canciones que te sorprendan.</p>
+        </div>
+        <button class="clear-btn" id="clearHistory">Limpiar historial</button>
+      </div>
+      <div class="overlay" id="overlay"></div>
+
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
