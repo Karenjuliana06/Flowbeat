@@ -4,5 +4,5 @@ Juliana Hernandez |
 Alvaro Diaz |
 Arnold Stiven |
 
-##Curso
+## Curso
 Tecnologías Disruptivas - Universidad EAN
